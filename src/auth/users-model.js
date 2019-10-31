@@ -52,9 +52,9 @@ users.methods.comparePassword = function(password) {
 
 users.statics.authenticateToken = function(token){
   let parsedToken = jwt.verify(token, process.env.SECRET);
-  // if(Date.now() >= 15 * 60){
-  //   return _authError();
-  // }
+  if(option.expiresIn){
+    return _authError();
+  }
   return this.findOne({_id: parsedToken.id});
 }
 
