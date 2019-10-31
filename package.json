@@ -1,0 +1,36 @@
+{
+  "name": "lab13-bearerauthorization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corey-marchand/lab13-bearerauthorization.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corey-marchand/lab13-bearerauthorization/issues"
+  },
+  "homepage": "https://github.com/corey-marchand/lab13-bearerauthorization#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.6.0",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "morgan": "^1.9.1",
+    "superagent": "^5.1.0"
+  }
+}
