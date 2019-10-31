@@ -2,6 +2,7 @@
 
 require('dotenv').config();
 
+let PORT=3000;
 // Start up DB Server
 const mongoose = require('mongoose');
 const options = {

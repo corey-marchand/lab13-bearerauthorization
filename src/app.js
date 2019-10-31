@@ -1,5 +1,7 @@
 'use strict';
 
+const port = 3000;
+
 // 3rd Party Resources
 const express = require('express');
 const cors = require('cors');
@@ -30,7 +32,7 @@ app.use(errorHandler);
 module.exports = {
   server: app,
   start: (port) => {
-    app.listen(port, () => {
+    app.listen(3001, () => {
       console.log(`Server Up on ${port}`);
     });
   },
